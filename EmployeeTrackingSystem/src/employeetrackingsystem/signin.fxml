@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="541.0" prefWidth="760.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="employeetrackingsystem.SigninController">
+    <stylesheets>
+        <URL value="@/dependencies/signin.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="227.0" layoutY="46.0" prefHeight="50.0" prefWidth="365.0" text="Admin Sign In Page">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <Pane layoutX="142.0" layoutY="84.0" prefHeight="349.0" prefWidth="481.0">
+         <children>
+            <Label layoutX="36.0" layoutY="61.0" prefHeight="19.0" prefWidth="84.0" text="Username">
+               <font>
+                  <Font name="Monotype Corsiva" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="36.0" layoutY="140.0" text="Password">
+               <font>
+                  <Font name="Monotype Corsiva" size="20.0" />
+               </font>
+            </Label>
+            <Hyperlink fx:id="forgetPass" layoutX="132.0" layoutY="224.0" onAction="#forgetPassword" text="forget password" />
+            <TextField fx:id="usernameSignIn" layoutX="132.0" layoutY="61.0" prefHeight="25.0" prefWidth="297.0" promptText="Enter your username here">
+               
+            </TextField>
+            <PasswordField fx:id="passwordSignIn" layoutX="132.0" layoutY="140.0" prefHeight="25.0" prefWidth="297.0" promptText="Enter your password here">
+              
+            </PasswordField>
+            <Button fx:id="loginbtn" layoutX="323.0" layoutY="223.0" mnemonicParsing="false" onAction="#login" prefHeight="25.0" prefWidth="106.0" text="Login" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
